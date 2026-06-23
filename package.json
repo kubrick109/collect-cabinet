@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish:update": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./scripts/publish-update.ps1"
   },
   "dependencies": {
     "react": "^19.2.6",

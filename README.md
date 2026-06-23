@@ -43,6 +43,27 @@ npm run lint
 npm run build
 ```
 
+## Publish an Update
+
+On Windows, double-click `publish-update.bat` after finishing a change.
+
+The publishing assistant will:
+
+1. Run lint and a production build.
+2. Ask for a short update description.
+3. Show every file that will be included.
+4. Create a Git commit.
+5. Push `main` to GitHub.
+6. Trigger the GitHub Pages deployment automatically.
+
+It can also be run from a terminal:
+
+```bash
+npm run publish:update
+```
+
+If automatic authentication is unavailable, the assistant opens GitHub Desktop so the final **Push origin** can be completed there.
+
 ## Data and Privacy
 
 This is currently a front-end MVP. Accounts, collection data, and compressed images are stored only in the current browser. Export JSON backups regularly if you use it for a real collection.

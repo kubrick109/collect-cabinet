@@ -31,3 +31,7 @@ VITE_SUPABASE_ANON_KEY=
 ```
 
 Never expose a service-role key in browser code.
+
+## Future Updates
+
+After changing the website, double-click `publish-update.bat` in the project folder. It performs the local checks, commit, GitHub upload, and deployment trigger in one guided workflow.
