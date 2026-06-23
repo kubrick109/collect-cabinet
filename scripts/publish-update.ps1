@@ -77,11 +77,11 @@ if (-not $changes) {
   exit 0
 }
 
-if (-not $Message.Trim()) {
+if ([string]::IsNullOrWhiteSpace($Message)) {
   $Message = Read-Host "Describe this update (example: Improve room colors)"
 }
 
-if (-not $Message.Trim()) {
+if ([string]::IsNullOrWhiteSpace($Message)) {
   Stop-WithMessage "A short update description is required."
 }
 
